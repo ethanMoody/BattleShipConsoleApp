@@ -60,12 +60,14 @@ namespace TestConsoleApp
                         if (IsGameOver())
                         {
                             Win();
+                            Console.ReadLine();
                             break;
                         }
 
                         if (numGuesses < 0)
                         {
                             Lose();
+                            Console.ReadLine();
                             break;
                         }
                     }
@@ -132,7 +134,11 @@ namespace TestConsoleApp
                                               // returns 0 if no ship is dead
 
                 // decrement numGuesses here so that it will display in the output
-                numGuesses--;
+                // do not decremnt if the user has guessed the same spot again
+                if (hitSuccess != 1)
+                {
+                    numGuesses--;
+                }
 
             }
             // replace with ascii banner later
