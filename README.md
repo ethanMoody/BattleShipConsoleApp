@@ -5,7 +5,7 @@
   - a destroyer with 2 spots
   
  * this is a player vs the computer style game where the player attempts to sink all of the computer's
-   randomly placed ships in under 25 shots (it was inspired by the game "Sploosh Kaboom" minigame in Nintendo's Wind Waker)
+   randomly placed ships in under 20 shots (it was inspired by the game "Sploosh Kaboom" minigame in Nintendo's Wind Waker)
 
 * the grid is arranged starting from index 0 in the top left all the way to index 24 in the bottom right
 
